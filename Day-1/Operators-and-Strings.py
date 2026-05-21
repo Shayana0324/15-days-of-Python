@@ -244,7 +244,6 @@ result = 'The area of circle with {} is {}'.format(str(radius), str(area))
 print(result)  # The area of circle with 10 is 314.0
 
 # isalnum(): Checks alphanumeric character
-
 challenge = 'FifteenDaysPython'
 print(challenge.isalnum())  # True
 
@@ -258,27 +257,23 @@ challenge = 'fifteen days of python 2026'
 print(challenge.isalnum())  # False
 
 # isalpha(): Checks if all characters are alphabets
-
 challenge = 'fifteen days of python'
 print(challenge.isalpha())  # True
 num = '123'
 print(num.isalpha())      # False
 
 # isdecimal(): Checks Decimal Characters
-
 challenge = 'fifteen days of python'
 print(challenge.find('y'))  # 5
 print(challenge.find('th'))  # 0
 
 # isdigit(): Checks Digit Characters
-
 challenge = 'fifteen'
 print(challenge.isdigit())  # False
 challenge = '15'
 print(challenge.isdigit())   # True
 
 # isdecimal():Checks decimal characters
-
 num = '10'
 print(num.isdecimal())  # True
 num = '10.5'
@@ -286,7 +281,6 @@ print(num.isdecimal())  # False
 
 
 # isidentifier():Checks for valid identifier means it check if a string is a valid variable name
-
 challenge = '15DaysOfPython'
 print(challenge.isidentifier())  # False, because it starts with a number
 challenge = 'fifteen_days_of_python'
@@ -294,61 +288,50 @@ print(challenge.isidentifier())  # True
 
 
 # islower():Checks if all alphabets in a string are lowercase
-
 challenge = 'fifteen days of python'
 print(challenge.islower())  # True
 challenge = 'fifteen days of python'
 print(challenge.islower())  # False
 
 # isupper(): returns if all characters are uppercase characters
-
 challenge = 'fifteen days of python'
 print(challenge.isupper())  # False
 challenge = 'fifteen DAYS OF PYTHON'
 print(challenge.isupper())  # True
 
-
 # isnumeric():Checks numeric characters
-
 num = '10'
 print(num.isnumeric())      # True
 print('ten'.isnumeric())    # False
 
 # join(): Returns a concatenated string
-
 web_tech = ['HTML', 'CSS', 'JavaScript', 'React']
 result = '#, '.join(web_tech)
 print(result)  # 'HTML# CSS# JavaScript# React'
 
 # strip(): Removes both leading and trailing characters
-
 challenge = ' fifteen days of python '
 print(challenge.strip('y'))  # 5
 
 # replace(): Replaces substring inside
-
 challenge = 'fifteen days of python'
 print(challenge.replace('python', 'coding'))  # 'fifteen days of coding'
 
 # split():Splits String from Left
-
 challenge = 'fifteen days of python'
 print(challenge.split())  # ['fifteen', 'days', 'of', 'python']
 
 # title(): Returns a Title Cased String
-
 challenge = 'fifteen days of python'
 print(challenge.title())  # fifteen Days Of Python
 
 # swapcase(): Checks if String Starts with the Specified String
-
 challenge = 'fifteen days of python'
 print(challenge.swapcase())   # fifteen DAYS OF PYTHON
 challenge = 'fifteen Days Of Python'
 print(challenge.swapcase())  # fifteen dAYS oF pYTHON
 
 # startswith(): Checks if String Starts with the Specified String
-
 challenge = 'fifteen days of python'
 print(challenge.startswith('fifteen'))  # True
 challenge = '15 days of python'
