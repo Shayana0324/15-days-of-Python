@@ -72,13 +72,13 @@ gravity = 9.81
 weight = mass * gravity
 print(weight, 'N')
 
-print(3 > 2)                # True: 3 is greater than 2
-print(3 >= 2)               # True: 3 is greater than 2
-print(3 < 2)                # False: 3 is less than 2
-print(2 < 3)                # True: 2 is less than 3
-print(2 <= 3)               # True: 2 is less than 3
-print(3 == 2)               # False: 3 is not equal to 2
-print(3 != 2)               # True: 3 is not equal to 2
+print(3 > 2)                                # True: 3 is greater than 2
+print(3 >= 2)                               # True: 3 is greater than 2
+print(3 < 2)                                # False: 3 is less than 2
+print(2 < 3)                                # True: 2 is less than 3
+print(2 <= 3)                               # True: 2 is less than 3
+print(3 == 2)                               # False: 3 is not equal to 2
+print(3 != 2)                               # True: 3 is not equal to 2
 print(len('mango') == len('avocado'))       # False
 print(len('mango') != len('avocado'))       # True
 print(len('mango') < len('avocado'))        # True
@@ -97,34 +97,34 @@ print('True or False:', True or False)
 # Another way comparison
 # True - because the data values are the same
 print('1 is 1', 1 is 1)
-print('1 is not 2', 1 is not 2)           # True - because 1 is not 2
-print('A in Asabeneh', 'A' in 'Asabeneh')  # True - A found in the string
-print('B in Asabeneh', 'B' in 'Asabeneh')  # False -there is no uppercase B
+print('1 is not 2', 1 is not 2)             # True - because 1 is not 2
+print('A in Asabeneh', 'A' in 'Asabeneh')   # True - A found in the string
+print('B in Asabeneh', 'B' in 'Asabeneh')   # False -there is no uppercase B
 # True - because coding for all has the word coding
 print('coding' in 'coding for all')
 print('a in an:', 'a' in 'an')      # True
 print('4 is 2 ** 2:', 4 is 2 ** 2)   # True
 
-print(3 > 2 and 4 > 3)  # True - because both statements are true
-print(3 > 2 and 4 < 3)  # False - because the second statement is false
-print(3 < 2 and 4 < 3)  # False - because both statements are false
-print(3 > 2 or 4 > 3)  # True - because both statements are true
-print(3 > 2 or 4 < 3)  # True - because one of the statement is true
-print(3 < 2 or 4 < 3)  # False - because both statements are false
-print(not 3 > 2)     # False - because 3 > 2 is true, then not True gives False
-print(not True)      # False - Negation, the not operator turns true to false
-print(not False)     # True
-print(not not True)  # True
-print(not not False)  # False
+print(3 > 2 and 4 > 3)                      # True - because both statements are true
+print(3 > 2 and 4 < 3)                      # False - because the second statement is false
+print(3 < 2 and 4 < 3)                      # False - because both statements are false
+print(3 > 2 or 4 > 3)                       # True - because both statements are true
+print(3 > 2 or 4 < 3)                       # True - because one of the statement is true
+print(3 < 2 or 4 < 3)                       # False - because both statements are false
+print(not 3 > 2)                            # False - because 3 > 2 is true, then not True gives False
+print(not True)                             # False - Negation, the not operator turns true to false
+print(not False)                            # True
+print(not not True)                         # True
+print(not not False)                        # False
 
 
 # Strings
-letter = 'P'                # A string could be a single character or a bunch of texts
-print(letter)               # P
-print(len(letter))          # 1
-greeting = 'Hello, World!'  # String could be a single or double quote,"Hello, World!"
-print(greeting)             # Hello, World!
-print(len(greeting))        # 13
+letter = 'P'                                # A string could be a single character or a bunch of texts
+print(letter)                               # P
+print(len(letter))                          # 1
+greeting = 'Hello, World!'                  # String could be a single or double quote,"Hello, World!"
+print(greeting)                             # Hello, World!
+print(len(greeting))                        # 13
 sentence = "I hope you are enjoying 15 days of python challenge"
 print(sentence)
 
@@ -144,7 +144,8 @@ first_name = 'Shayana'
 last_name = 'Shrestha'
 space = ' '
 full_name = first_name + space + last_name
-print(full_name)  # Shayana Shrestha
+print(full_name)                            # Shayana Shrestha
+
 # Checking length of a string using len() builtin function
 print(len(first_name))  # 8
 print(len(last_name))   # 7
@@ -153,7 +154,7 @@ print(len(full_name))  # 15
 
 # Unpacking characters
 language = 'Python'
-a, b, c, d, e, f = language  # unpacking sequence characters into variables
+a, b, c, d, e, f = language                 # unpacking sequence characters into variables
 print(a)  # P
 print(b)  # y
 print(c)  # t

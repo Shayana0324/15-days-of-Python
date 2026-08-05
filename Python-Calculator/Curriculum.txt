@@ -1,0 +1,145 @@
+1. Variables
+
+Definition: A variable is a name that stores a value so you can use it later.
+
+python
+name = "Alex"
+age = 12
+
+For the calculator, we'll use variables to store the numbers the user enters.
+Type of variables:
+a. Integer (int) — whole numbers, no decimal point
+
+python
+age = 12
+score = -5
+
+b. Float (float) — numbers with a decimal point
+
+python
+height = 5.4
+price = 19.99
+
+c. String (str) — text, wrapped in quotes (single or double)
+
+python
+name = "Alex"
+message = 'Hello!'
+
+d. Boolean (bool) — True or False, used for yes/no or conditions
+
+python
+is_raining = True
+has_pet = False
+
+e. List — an ordered, changeable collection of items
+
+python
+fruits = ["apple", "banana", "cherry"]
+scores = [90, 85, 77]
+
+f. Dictionary (dict) — key-value pairs
+
+python
+student = {"name": "Alex", "age": 12}
+
+g. Tuple — like a list, but unchangeable (immutable) once created
+
+python
+coordinates = (10, 20)
+
+h. NoneType — represents "nothing" or "no value"
+
+python
+result = None
+
+2. Input and Type Conversion
+
+Definition: input() always returns a string, even if the user types a number. To do math, you need to convert it using int() or float().
+
+python
+num1 = input("Enter first number: ")   # this is a string, e.g. "5"
+num1 = float(num1)                     # now it's a number, e.g. 5.0
+
+This is usually the #1 bug students hit — trying to do math on a string.
+
+Example error to show them:
+
+python
+num1 = input("Enter a number: ")
+num2 = input("Enter another number: ")
+print(num1 + num2)   # "5" + "3" = "53" (string concatenation, not addition!)
+3. Operators
+
+Definition: Symbols that perform operations on values.
+
+Operator	Meaning	Example	Result
++	addition	5 + 3	8
+-	subtraction	5 - 3	2
+*	multiplication	5 * 3	15
+/	division	5 / 3	1.666...
+//	floor division	5 // 3	1
+%	modulus (remainder)	5 % 3	2
+**	exponent	5 ** 2	25
+4. Conditionals (if / elif / else)
+
+Definition: Lets the program choose what to do based on a condition.
+
+python
+operator = "+"
+
+if operator == "+":
+    result = num1 + num2
+elif operator == "-":
+    result = num1 - num2
+elif operator == "*":
+    result = num1 * num2
+elif operator == "/":
+    result = num1 / num2
+else:
+    print("Invalid operator")
+
+This is the heart of the calculator — great spot to check who remembers == vs =.
+
+5. Functions
+
+Definition: A reusable block of code that takes input (parameters) and can give back output (return).
+
+python
+def add(a, b):
+    return a + b
+
+def subtract(a, b):
+    return a - b
+
+print(add(5, 3))       # 8
+print(subtract(5, 3))  # 2
+
+Turning each operation into a function makes the calculator cleaner and reusable — good moment to talk about why functions matter, not just how to write them.
+
+6. Loops (while)
+
+Definition: Repeats a block of code as long as a condition is true. Great for letting the user calculate again without restarting the program.
+
+python
+running = True
+
+while running:
+    # do a calculation
+    again = input("Calculate again? (yes/no): ")
+    if again.lower() != "yes":
+        running = False
+7. Error Handling (try / except) — optional, for stronger students
+
+Definition: Lets the program handle problems gracefully instead of crashing — for example, dividing by zero or typing letters instead of numbers.
+
+python
+try:
+    num1 = float(input("Enter a number: "))
+except ValueError:
+    print("That's not a valid number!")
+python
+try:
+    result = num1 / num2
+except ZeroDivisionError:
+    print("Can't divide by zero!")
