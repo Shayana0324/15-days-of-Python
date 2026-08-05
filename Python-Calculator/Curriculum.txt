@@ -43,6 +43,12 @@ f. Dictionary (dict) — key-value pairs
 python
 student = {"name": "Alex", "age": 12}
 
+A quick trick to check type in class:
+
+python
+x = 5
+print(type(x))
+
 g. Tuple — like a list, but unchangeable (immutable) once created
 
 python
